@@ -1053,6 +1053,22 @@
         .desktop-version {
             display: none;
         }
+
+        .car-rating-mobile {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+    color: #fbbf24;
+    font-size: 0.9rem;
+}
+.car-rating-mobile span {
+    color: var(--gray);
+    margin-left: 0.3rem;
+}
+
+       
+        
     </style>
 </head>
 <body>
@@ -1078,6 +1094,14 @@
             <!-- Car Info - Mobile -->
             <div class="car-info-mobile">
                 <h1 class="car-title-mobile">Audi A6</h1>
+                <div class="car-rating-mobile">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+    <span>4.5</span>
+</div>
                 <p class="car-subtitle-mobile">2020 год, 2.0 TDI, 190 л.с., Автомат</p>
                 
                 <div class="car-specs-mobile">
@@ -1938,16 +1962,16 @@
                     }
                     
                     // Scroll to image
-                    const carImageMobile = document.getElementById('carImageMobile');
-const offset = -60; // Смещение в пикселях (отрицательное значение поднимает прокрутку выше)
-const rect = carImageMobile.getBoundingClientRect();
-const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-const targetPosition = rect.top + scrollTop + offset;
+//                     const carImageMobile = document.getElementById('carImageMobile');
+// const offset = -60; // Смещение в пикселях (отрицательное значение поднимает прокрутку выше)
+// const rect = carImageMobile.getBoundingClientRect();
+// const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// const targetPosition = rect.top + scrollTop + offset;
 
-window.scrollTo({
-    top: targetPosition,
-    behavior: 'smooth'
-});
+// window.scrollTo({
+//     top: targetPosition,
+//     behavior: 'smooth'
+// });
                 });
             });
             
@@ -2017,4 +2041,5 @@ window.scrollTo({
     </script>
 </body>
 </html>
+
 
